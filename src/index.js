@@ -64,13 +64,29 @@ import ReactDOM from 'react-dom';
 // );
 
 // Template Literals in JSX in ReactJS
+// const fname='Sayan'
+// const lname='Mukherjee'
+// ReactDOM.render(
+//   <>
+//     <h1>{`My name is ${fname} ${lname}`}</h1>
+//     <h4> Addition of 2 and 3 is {2+3}</h4>
+//     <h6>I am generating a random number= {Math.random()}</h6>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+
+// Challenge 2 in React
+const currentdate=new Date()
+const currDate=currentdate.getDate()+"/"+(currentdate.getMonth()+1)+"/"+currentdate.getFullYear()
+const currTime=currentdate.getHours()+":"+currentdate.getMinutes()+":"+currentdate.getSeconds()+":"+currentdate.getMilliseconds()
 const fname='Sayan'
 const lname='Mukherjee'
 ReactDOM.render(
   <>
-    <h1>{`My name is ${fname} ${lname}`}</h1>
-    <h4> Addition of 2 and 3 is {2+3}</h4>
-    <h6>I am generating a random number= {Math.random()}</h6>
+    <h1>{`Hello, My name is ${fname} ${lname}`}</h1>
+    <h4>Todays date is {currDate}</h4>
+    <h4>Todays time is {currTime}</h4>
   </>, 
   document.getElementById('root')
 );
