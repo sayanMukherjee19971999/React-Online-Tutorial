@@ -53,10 +53,22 @@ import ReactDOM from 'react-dom';
 
 // Javascript Expressions
 // We can only use expressions inside curly braces but not statements i.e for loop , if-else etc.
-const name='Sayan Mukherjee'
+// const name='Sayan Mukherjee'
+// ReactDOM.render(
+//   <>
+//     <h1>My name is {name}</h1>
+//     <h4> Addition of 2 and 3 is {2+3}</h4>
+//     <h6>I am generating a random number= {Math.random()}</h6>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+// Template Literals in JSX in ReactJS
+const fname='Sayan'
+const lname='Mukherjee'
 ReactDOM.render(
   <>
-    <h1>My name is {name}</h1>
+    <h1>{`My name is ${fname} ${lname}`}</h1>
     <h4> Addition of 2 and 3 is {2+3}</h4>
     <h6>I am generating a random number= {Math.random()}</h6>
   </>, 
