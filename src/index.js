@@ -27,10 +27,25 @@ import ReactDOM from 'react-dom';
 // JSX elements but on inspecting it will not create a new div and display the elements 
 // inside the div with id=root. We can also write <></> instead of writing React.Fragment
 // which will do the same function
+// ReactDOM.render(
+//   <React.Fragment>
+//     <h1>Hello World</h1>
+//     <p>Welcome to the world of programming</p>
+//   </React.Fragment>, 
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  <React.Fragment>
-    <h1>Hello World</h1>
-    <p>Welcome to the world of programming</p>
-  </React.Fragment>, 
+  <>
+    <h1>Netflix Series</h1>
+    <p>List of 5 Best Series</p>
+    <ol>
+      <li>Dark</li>
+      <li>Extra curricular</li>
+      <li>My Holo Love</li>
+      <li>My first-2 love</li>
+      <li>Mr Robot</li>
+    </ol>
+  </>, 
   document.getElementById('root')
 );
