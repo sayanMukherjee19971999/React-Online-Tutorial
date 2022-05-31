@@ -35,17 +35,30 @@ import ReactDOM from 'react-dom';
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <>
+//     <h1>Netflix Series</h1>
+//     <p>List of 5 Best Series</p>
+//     <ol>
+//       <li>Dark</li>
+//       <li>Extra curricular</li>
+//       <li>My Holo Love</li>
+//       <li>My first-2 love</li>
+//       <li>Mr Robot</li>
+//     </ol>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+
+// Javascript Expressions
+// We can only use expressions inside curly braces but not statements i.e for loop , if-else etc.
+const name='Sayan Mukherjee'
 ReactDOM.render(
   <>
-    <h1>Netflix Series</h1>
-    <p>List of 5 Best Series</p>
-    <ol>
-      <li>Dark</li>
-      <li>Extra curricular</li>
-      <li>My Holo Love</li>
-      <li>My first-2 love</li>
-      <li>Mr Robot</li>
-    </ol>
+    <h1>My name is {name}</h1>
+    <h4> Addition of 2 and 3 is {2+3}</h4>
+    <h6>I am generating a random number= {Math.random()}</h6>
   </>, 
   document.getElementById('root')
 );
