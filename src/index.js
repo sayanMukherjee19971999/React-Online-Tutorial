@@ -12,10 +12,25 @@ import ReactDOM from 'react-dom';
 
 //in React v.16.0.0 and above it is possible fot the render method to pass an array of elements
 //rather than passing muktiple elements in a single div
+// ReactDOM.render(
+//   [
+//     <h1>Hello World</h1>,
+//     <p>Welcome to the world of programming</p>
+//   ], 
+//   document.getElementById('root')
+// );
+
+
+// Understanding React.Fragment :- If we use div to render multiple jsx elements
+// then on inspecting the page we see that it creates a div inside the div with root=id
+// so to prevent this we can use React.Fragment in place of div to display multiple
+// JSX elements but on inspecting it will not create a new div and display the elements 
+// inside the div with id=root. We can also write <></> instead of writing React.Fragment
+// which will do the same function
 ReactDOM.render(
-  [
-    <h1>Hello World</h1>,
+  <React.Fragment>
+    <h1>Hello World</h1>
     <p>Welcome to the world of programming</p>
-  ], 
+  </React.Fragment>, 
   document.getElementById('root')
 );
