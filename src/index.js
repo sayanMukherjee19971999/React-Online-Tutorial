@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
 // ReactDOM.render(
 //   <div>
@@ -94,15 +95,30 @@ import ReactDOM from 'react-dom';
 
 //JSX Attributes in ReactJS
 // The JSX attributes are written in camel case. This is the convension in React
+// const fname='Sayan'
+// const lname='Mukherjee'
+// const img1="https://picsum.photos/200/300"
+// const youtube="https://www.youtube.com/watch?v=OloAP8p1k1w&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=14"
+// ReactDOM.render(
+//   <>
+//     <h1 contentEditable="true">{`Hello, My name is ${fname} ${lname}`}</h1>
+//     <img src={img1} alt=''/>
+//     <a href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+
+// CSS style and importing CSS files in React
 const fname='Sayan'
 const lname='Mukherjee'
 const img1="https://picsum.photos/200/300"
 const youtube="https://www.youtube.com/watch?v=OloAP8p1k1w&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=14"
 ReactDOM.render(
   <>
-    <h1 contentEditable="true">{`Hello, My name is ${fname} ${lname}`}</h1>
-    <img src={img1} alt=''/>
-    <a href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
+    <h1 className='heading' contentEditable="true">{`Hello, My name is ${fname} ${lname}`}</h1>
+    <img className='image' src={img1} alt=''/>
+    <a className='link' href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
   </>, 
   document.getElementById('root')
 );

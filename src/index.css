@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    color: green;
+    background-color: yellowgreen;
+}
+
+.image{
+    border: 10px solid saddlebrown;
+    border-radius: 25px;
+}
+
+.link{
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+}
