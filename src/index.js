@@ -161,7 +161,7 @@ const heading={
 }
 const content={
   padding: '20px 40px',
-  backgroundColor: 'pink',
+  backgroundColor: '#ffe9c5',
   borderRadius: '20px'
 }
 
