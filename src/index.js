@@ -110,19 +110,42 @@ import './index.css';
 
 
 // CSS style and importing CSS files in React
+// const fname='Sayan'
+// const lname='Mukherjee'
+// const img1="https://picsum.photos/200/300"
+// const youtube="https://www.youtube.com/watch?v=OloAP8p1k1w&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=14"
+// ReactDOM.render(
+//   <>
+//     <h1 className='heading' contentEditable="true">{`Hello, My name is ${fname} ${lname}`}</h1>
+//     <img className='image' src={img1} alt=''/>
+//     <a className='link' href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+// Using Google fonts in React
+// To use google fonts you can copy the link and paste it in index.html file
+// or you can import it in the particular css file where you require the font
+
+
+// Internal and Inline style in React
 const fname='Sayan'
 const lname='Mukherjee'
 const img1="https://picsum.photos/200/300"
 const youtube="https://www.youtube.com/watch?v=OloAP8p1k1w&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=14"
+const heading={
+  color: 'green',
+  backgroundColor: 'white',
+  textAlign: 'center',
+  textTransform: 'uppercase',
+  fontSize: '100px',
+  fontWeight: 'bold'
+}
 ReactDOM.render(
   <>
-    <h1 className='heading' contentEditable="true">{`Hello, My name is ${fname} ${lname}`}</h1>
+    <h1 style={heading}>{`Hello, My name is ${fname} ${lname}`}</h1>
     <img className='image' src={img1} alt=''/>
     <a className='link' href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
   </>, 
   document.getElementById('root')
 );
-
-// Using Google fonts in React
-// To use google fonts you can copy the link and paste it in index.html file
-// or you can import it in the particular css file where you require the font
