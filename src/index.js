@@ -129,23 +129,64 @@ import './index.css';
 
 
 // Internal and Inline style in React
-const fname='Sayan'
-const lname='Mukherjee'
-const img1="https://picsum.photos/200/300"
-const youtube="https://www.youtube.com/watch?v=OloAP8p1k1w&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=14"
+// const fname='Sayan'
+// const lname='Mukherjee'
+// const img1="https://picsum.photos/200/300"
+// const youtube="https://www.youtube.com/watch?v=OloAP8p1k1w&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=14"
+// const heading={
+//   color: 'green',
+//   backgroundColor: 'white',
+//   textAlign: 'center',
+//   textTransform: 'uppercase',
+//   fontSize: '100px',
+//   fontWeight: 'bold'
+// }
+// ReactDOM.render(
+//   <>
+//     <h1 style={heading}>{`Hello, My name is ${fname} ${lname}`}</h1>
+//     <img className='image' src={img1} alt=''/>
+//     <a className='link' href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+
+// React challenge number 3
+const date=new Date()
 const heading={
-  color: 'green',
-  backgroundColor: 'white',
-  textAlign: 'center',
-  textTransform: 'uppercase',
-  fontSize: '100px',
-  fontWeight: 'bold'
+  color: 'red',
+  fontSize: '50px',
+  fontWeight: 'bold',
+  fontStyle: 'Roboto'
 }
+const content={
+  padding: '20px 40px',
+  backgroundColor: 'pink',
+  borderRadius: '20px'
+}
+
+const cssGreeting={}
+
+const hour=date.getHours()
+let greeting=''
+if(hour>=1 && hour<12){
+  greeting='Good Morning'
+  cssGreeting.color='green'
+}
+else if(hour>=12 && hour<19){
+  greeting='Good Afternoon'
+  cssGreeting.color='orange'
+}
+else{
+  greeting='Good Evening'
+  cssGreeting.color='black'
+}
+
 ReactDOM.render(
   <>
-    <h1 style={heading}>{`Hello, My name is ${fname} ${lname}`}</h1>
-    <img className='image' src={img1} alt=''/>
-    <a className='link' href={youtube} target="_blank" rel="noreferrer">Click to learn React</a>
+    <div style={content} className='container'>
+      <h1 style={heading}>Hello Sir, <span style={cssGreeting}>{greeting}</span></h1>
+    </div>
   </>, 
   document.getElementById('root')
 );
