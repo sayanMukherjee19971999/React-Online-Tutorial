@@ -122,3 +122,7 @@ ReactDOM.render(
   </>, 
   document.getElementById('root')
 );
+
+// Using Google fonts in React
+// To use google fonts you can copy the link and paste it in index.html file
+// or you can import it in the particular css file where you require the font
