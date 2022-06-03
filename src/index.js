@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 
 // ReactDOM.render(
 //   <div>
@@ -152,41 +153,49 @@ import './index.css';
 
 
 // React challenge number 3
-const date=new Date()
-const heading={
-  color: 'red',
-  fontSize: '50px',
-  fontWeight: 'bold',
-  fontStyle: 'Roboto'
-}
-const content={
-  padding: '20px 40px',
-  backgroundColor: '#ffe9c5',
-  borderRadius: '20px'
-}
+// const date=new Date()
+// const heading={
+//   color: 'red',
+//   fontSize: '50px',
+//   fontWeight: 'bold',
+//   fontStyle: 'Roboto'
+// }
+// const content={
+//   padding: '20px 40px',
+//   backgroundColor: '#ffe9c5',
+//   borderRadius: '20px'
+// }
 
-const cssGreeting={}
+// const cssGreeting={}
 
-const hour=date.getHours()
-let greeting=''
-if(hour>=1 && hour<12){
-  greeting='Good Morning'
-  cssGreeting.color='green'
-}
-else if(hour>=12 && hour<19){
-  greeting='Good Afternoon'
-  cssGreeting.color='orange'
-}
-else{
-  greeting='Good Evening'
-  cssGreeting.color='black'
-}
+// const hour=date.getHours()
+// let greeting=''
+// if(hour>=1 && hour<12){
+//   greeting='Good Morning'
+//   cssGreeting.color='green'
+// }
+// else if(hour>=12 && hour<19){
+//   greeting='Good Afternoon'
+//   cssGreeting.color='orange'
+// }
+// else{
+//   greeting='Good Evening'
+//   cssGreeting.color='black'
+// }
 
+// ReactDOM.render(
+//   <>
+//     <div style={content} className='container'>
+//       <h1 style={heading}>Hello Sir, <span style={cssGreeting}>{greeting}</span></h1>
+//     </div>
+//   </>, 
+//   document.getElementById('root')
+// );
+
+
+// UNderstanding Component Based Architecture in ReactJS
 ReactDOM.render(
-  <>
-    <div style={content} className='container'>
-      <h1 style={heading}>Hello Sir, <span style={cssGreeting}>{greeting}</span></h1>
-    </div>
-  </>, 
+  // Here App is a component
+  <App/>,
   document.getElementById('root')
 );
