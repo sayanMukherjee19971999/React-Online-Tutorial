@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import youtuber,{favprog, myName} from './App';
 
 // ReactDOM.render(
 //   <div>
@@ -194,8 +194,22 @@ import App from './App';
 
 
 // UNderstanding Component Based Architecture in ReactJS
+// ReactDOM.render(
+//   // Here App is a component
+//   <App/>,
+//   document.getElementById('root')
+// );
+
+
+// Understanding import and export in React
 ReactDOM.render(
   // Here App is a component
-  <App/>,
+  <>
+    <ol>
+      <li>{youtuber}</li>
+      <li>{favprog}</li>
+      <li>{myName()}</li>
+    </ol>
+  </>,
   document.getElementById('root')
 );
