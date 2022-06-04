@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import youtuber,{favprog, myName} from './App';
+// import youtuber,{favprog, myName} from './App';
+import Sum, {Multiply, Division, Substract} from './App';
 
 // ReactDOM.render(
 //   <div>
@@ -202,14 +203,26 @@ import youtuber,{favprog, myName} from './App';
 
 
 // Understanding import and export in React
+// ReactDOM.render(
+//   // Here App is a component
+//   <>
+//     <ol>
+//       <li>{youtuber}</li>
+//       <li>{favprog}</li>
+//       <li>{myName()}</li>
+//     </ol>
+//   </>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  // Here App is a component
   <>
-    <ol>
-      <li>{youtuber}</li>
-      <li>{favprog}</li>
-      <li>{myName()}</li>
-    </ol>
+    <ul>
+      <li><h1>Sum of two numbers is {Sum(30,3)}</h1></li>
+      <li><h1>Substraction of two numbers is {Substract(30,3)}</h1></li>
+      <li><h1>Multiplication of two numbers is {Multiply(10,3)}</h1></li>
+      <li><h1>Division of two numbers is {Division(10,3)}</h1></li>
+    </ul>
   </>,
   document.getElementById('root')
 );

@@ -51,15 +51,40 @@ import React from 'react';
 
 //  export default App
 
-const youtuber="Sayan Technical"
-const favprog="React Tutorial"
+// const youtuber="Sayan Technical"
+// const favprog="React Tutorial"
 
-function myName(){
-    let value="Raj Mukherjee"
-    return(  
-        value
-    );
+// function myName(){
+//     let value="Raj Mukherjee"
+//     return(  
+//         value
+//     );
+// }
+
+// export default youtuber
+// export {favprog, myName}
+
+
+// Calculator in ReactJS Challenge 5
+function Sum(a,b){
+    let sum=a+b
+    return sum
 }
 
-export default youtuber
-export {favprog, myName}
+function Substract(a,b){
+    let diff=a-b
+    return diff
+}
+
+function Multiply(a,b){
+    let mult=a*b
+    return mult
+}
+
+function Division(a,b){
+    let div=a/b
+    return div.toFixed(2)
+}
+
+export default Sum
+export {Substract, Multiply, Division}
