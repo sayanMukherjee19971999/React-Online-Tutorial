@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import youtuber,{favprog, myName} from './App';
-import Sum, {Multiply, Division, Substract} from './App';
+// import Sum, {Multiply, Division, Substract} from './App';
+import Card from './Card';
 
 // ReactDOM.render(
 //   <div>
@@ -215,14 +216,50 @@ import Sum, {Multiply, Division, Substract} from './App';
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <>
+//     <ul>
+//       <li><h1>Sum of two numbers is {Sum(30,3)}</h1></li>
+//       <li><h1>Substraction of two numbers is {Substract(30,3)}</h1></li>
+//       <li><h1>Multiplication of two numbers is {Multiply(10,3)}</h1></li>
+//       <li><h1>Division of two numbers is {Division(10,3)}</h1></li>
+//     </ul>
+//   </>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
   <>
-    <ul>
-      <li><h1>Sum of two numbers is {Sum(30,3)}</h1></li>
-      <li><h1>Substraction of two numbers is {Substract(30,3)}</h1></li>
-      <li><h1>Multiplication of two numbers is {Multiply(10,3)}</h1></li>
-      <li><h1>Division of two numbers is {Division(10,3)}</h1></li>
-    </ul>
+    <Card 
+      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
+      title="DARK" 
+      category="A Netflix Original Series" 
+      link="https://www.netflix.com/in/title/80990668?source=35"
+    />
+    <Card 
+      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
+      title="DARK" 
+      category="A Netflix Original Series" 
+      link="https://www.netflix.com/in/title/80990668?source=35"
+    />
+    <Card 
+      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
+      title="DARK" 
+      category="A Netflix Original Series" 
+      link="https://www.netflix.com/in/title/80990668?source=35"
+    />
+    <Card 
+      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
+      title="DARK" 
+      category="A Netflix Original Series" 
+      link="https://www.netflix.com/in/title/80990668?source=35"
+    />
+    <Card 
+      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
+      title="DARK" 
+      category="A Netflix Original Series" 
+      link="https://www.netflix.com/in/title/80990668?source=35"
+    />
   </>,
   document.getElementById('root')
 );
