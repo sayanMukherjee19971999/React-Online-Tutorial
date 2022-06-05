@@ -4,6 +4,7 @@ import './index.css';
 // import youtuber,{favprog, myName} from './App';
 // import Sum, {Multiply, Division, Substract} from './App';
 import Card from './Card';
+import Sdata from './Sdata';
 
 // ReactDOM.render(
 //   <div>
@@ -228,38 +229,32 @@ import Card from './Card';
 //   document.getElementById('root')
 // );
 
+// function ncard(value){
+//   return(
+//     <Card 
+//       imgsrc={value.imgsrc}
+//       title={value.sname} 
+//       category={value.title}
+//       link={value.link}
+//     />
+//   );
+// }
+
 ReactDOM.render(
   <>
-    <Card 
-      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
-      title="DARK" 
-      category="A Netflix Original Series" 
-      link="https://www.netflix.com/in/title/80990668?source=35"
-    />
-    <Card 
-      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
-      title="DARK" 
-      category="A Netflix Original Series" 
-      link="https://www.netflix.com/in/title/80990668?source=35"
-    />
-    <Card 
-      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
-      title="DARK" 
-      category="A Netflix Original Series" 
-      link="https://www.netflix.com/in/title/80990668?source=35"
-    />
-    <Card 
-      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
-      title="DARK" 
-      category="A Netflix Original Series" 
-      link="https://www.netflix.com/in/title/80990668?source=35"
-    />
-    <Card 
-      imgsrc="https://flxt.tmsimg.com/assets/p14652182_b1t_v9_aa.jpg"
-      title="DARK" 
-      category="A Netflix Original Series" 
-      link="https://www.netflix.com/in/title/80990668?source=35"
-    />
+    <h1 className='heading_style'>List of Top 6 Netflix Series in 2020</h1>
+    
+    {Sdata.map((value, index)=>{
+      console.log(index)
+      return(
+        <Card 
+          imgsrc={value.imgsrc}
+          title={value.sname} 
+          category={value.title}
+          link={value.link}
+        />
+      );
+    })}
   </>,
   document.getElementById('root')
 );
