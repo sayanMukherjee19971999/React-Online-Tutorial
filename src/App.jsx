@@ -1,4 +1,8 @@
 import React from 'react';
+import Card from './Card';
+import Sdata from './Sdata';
+import './Card.css';
+import './index.css';
 // import './App.css';
 
 // const date=new Date()
@@ -66,25 +70,49 @@ import React from 'react';
 
 
 // Calculator in ReactJS Challenge 5
-function Sum(a,b){
-    let sum=a+b
-    return sum
-}
+// function Sum(a,b){
+//     let sum=a+b
+//     return sum
+// }
 
-function Substract(a,b){
-    let diff=a-b
-    return diff
-}
+// function Substract(a,b){
+//     let diff=a-b
+//     return diff
+// }
 
-function Multiply(a,b){
-    let mult=a*b
-    return mult
-}
+// function Multiply(a,b){
+//     let mult=a*b
+//     return mult
+// }
 
-function Division(a,b){
-    let div=a/b
-    return div.toFixed(2)
-}
+// function Division(a,b){
+//     let div=a/b
+//     return div.toFixed(2)
+// }
 
-export default Sum
-export {Substract, Multiply, Division}
+// export default Sum
+// export {Substract, Multiply, Division}
+
+
+
+// Netflix chalenge in ReactJS
+const App=()=>(
+    <>
+      <h1 className='heading_style'>List of Top 6 Netflix Series in 2020</h1>
+      
+      {Sdata.map((value, index)=>{
+        console.log(index)
+        return(
+          <Card 
+            key={value.id}
+            imgsrc={value.imgsrc}
+            title={value.sname} 
+            category={value.title}
+            link={value.link}
+          />
+        );
+      })}
+    </>
+  );
+
+  export default App;

@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import App from './App';
+// import './index.css';
 // import youtuber,{favprog, myName} from './App';
 // import Sum, {Multiply, Division, Substract} from './App';
-import Card from './Card';
-import Sdata from './Sdata';
+// import Card from './Card';
+// import Sdata from './Sdata';
 
 // ReactDOM.render(
 //   <div>
@@ -241,20 +242,6 @@ import Sdata from './Sdata';
 // }
 
 ReactDOM.render(
-  <>
-    <h1 className='heading_style'>List of Top 6 Netflix Series in 2020</h1>
-    
-    {Sdata.map((value, index)=>{
-      console.log(index)
-      return(
-        <Card 
-          imgsrc={value.imgsrc}
-          title={value.sname} 
-          category={value.title}
-          link={value.link}
-        />
-      );
-    })}
-  </>,
+  <App/>,
   document.getElementById('root')
 );
