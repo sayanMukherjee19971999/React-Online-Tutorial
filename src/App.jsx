@@ -118,9 +118,9 @@ const App=()=>{
     <h1 className='heading_style'> 🎰 Welcome to  <span style={{fontWeight:'bold'}}>Slot Machine Game</span> 🎰</h1>
     <div className='content'>
       <div className='slot_machine'>
-        <SlotMachine x='😄' y='😄' z='😄'/>
-        <SlotMachine x='😄' y='🎅' z='😄'/>
-        <SlotMachine x='😄' y='👾' z='😄'/>
+        <SlotMachine x='😄' y='😄' z='😄'/><hr/>
+        <SlotMachine x='😄' y='🎅' z='😄'/><hr/>
+        <SlotMachine x='😄' y='👾' z='😄'/><hr/>
         <SlotMachine x='👫' y='👫' z='👫'/>
       </div> 
     </div>
