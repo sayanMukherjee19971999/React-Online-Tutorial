@@ -50,3 +50,16 @@
     margin-bottom: 30px;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slot_machine{
+    width: 20%;
+    height: fit-content;
+    box-shadow: 5px 5px 5px 5px #888888;
+    text-align: center;
+}
+

@@ -1,8 +1,11 @@
 import React from 'react';
-import Card from './Card';
-import Sdata from './Sdata';
-import './Card.css';
+// import Card from './Card';
+// import Sdata from './Sdata';
+// import './Card.css';
 import './index.css';
+import SlotMachine from './SlotMachine';
+// import Netflix from './Netflix';
+// import Amazon from './Amazon';
 // import './App.css';
 
 // const date=new Date()
@@ -96,23 +99,32 @@ import './index.css';
 
 
 // Netflix chalenge in ReactJS
-const App=()=>(
-    <>
-      <h1 className='heading_style'>List of Top 6 Netflix Series in 2020</h1>
-      
-      {Sdata.map((value, index)=>{
-        console.log(index)
-        return(
-          <Card 
-            key={value.id}
-            imgsrc={value.imgsrc}
-            title={value.sname} 
-            category={value.title}
-            link={value.link}
-          />
-        );
-      })}
-    </>
-  );
 
-  export default App;
+// const favSeries="netflix";
+
+// const App=()=>(
+//     <>
+//       <h1 className='heading_style'>List of Top 6 Netflix Series in 2020</h1>
+//       {favSeries==="netflix"? <Netflix/> : <Amazon/>}
+//     </>
+//   );
+
+//   export default App;
+
+
+// Slot Machine Game
+const App=()=>{
+  return <>
+    <h1 className='heading_style'> 🎰 Welcome to  <span style={{fontWeight:'bold'}}>Slot Machine Game</span> 🎰</h1>
+    <div className='content'>
+      <div className='slot_machine'>
+        <SlotMachine x='😄' y='😄' z='😄'/>
+        <SlotMachine x='😄' y='🎅' z='😄'/>
+        <SlotMachine x='😄' y='👾' z='😄'/>
+        <SlotMachine x='👫' y='👫' z='👫'/>
+      </div> 
+    </div>
+  </>;
+}
+
+export default App;
